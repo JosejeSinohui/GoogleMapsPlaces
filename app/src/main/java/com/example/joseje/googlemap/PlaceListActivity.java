@@ -60,7 +60,7 @@ public class PlaceListActivity extends AppCompatActivity implements ListClickEle
 
     @Override
     public void onItemClick(Place place) {
-        MapsActivity.start(this, place);
+        DetailPlaceActivity.start(this, place);
     }
 
     @Override

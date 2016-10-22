@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private static String PLACE_EXTRA_KEY = "whatever";
+    public static String PLACE_EXTRA_KEY = "whatever";
     private GoogleMap mMap;
     private Place mPlace;
 
@@ -52,7 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng markertoadd = new LatLng(mPlace.getLongitude(),mPlace.getLatitude());
+        LatLng markertoadd = new LatLng(mPlace.getLatitude(),mPlace.getLongitude());
         mMap.addMarker(new MarkerOptions().position(markertoadd).title(mPlace.getName()));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(markertoadd));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(15),2000, null);
