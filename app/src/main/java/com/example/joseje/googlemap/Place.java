@@ -14,6 +14,10 @@ public class Place implements Parcelable{
 
     private double latitude;
 
+    private String imageUrl;
+
+    private int ranking;
+
     public Place(String name, double longitude, double latitude) {
         this.name = name;
         this.longitude = longitude;

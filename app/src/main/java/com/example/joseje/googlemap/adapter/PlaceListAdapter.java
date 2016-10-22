@@ -1,4 +1,4 @@
-package com.example.joseje.googlemap;
+package com.example.joseje.googlemap.adapter;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.joseje.googlemap.ListClickElement;
+import com.example.joseje.googlemap.Place;
+import com.example.joseje.googlemap.R;
 
 import java.util.List;
 
@@ -18,7 +22,7 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
     private ListClickElement mListClickElement;
     private List<Place> mPlaceList;
 
-    PlaceListAdapter(List<Place> placeList, ListClickElement listClickElement){
+    public PlaceListAdapter(List<Place> placeList, ListClickElement listClickElement){
         mListClickElement = listClickElement;
         mPlaceList = placeList;
     }
