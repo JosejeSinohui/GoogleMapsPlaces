@@ -20,9 +20,17 @@
     <TextView
         android:text="@string/ranking"
         style="@style/header_text"/>
-    <TextView
+
+    <RatingBar
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
         android:id="@+id/place_ranking_attribute"
-        style="@style/attribute_text"/>
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1"
+        style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+        />
 
     <RelativeLayout
         android:layout_marginTop="24dp"

@@ -46,7 +46,7 @@ public class PlaceListActivity extends AppCompatActivity implements ListClickEle
 
     private void generatePlaceList() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://demo2355296.mockable.io/")
+                .baseUrl("http://demo5868379.mockable.io/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
