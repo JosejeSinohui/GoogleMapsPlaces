@@ -3,6 +3,8 @@ package com.example.joseje.googlemap;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,12 +35,14 @@ public class DetailPlaceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_detail_place, container, false);
+        View v = inflater.inflate(R.layout.fragmentb_detail_place, container, false);
 
         ImageView placeImageView = (ImageView) v.findViewById(R.id.place_image_view);
         TextView placeNameTextView = (TextView) v.findViewById(R.id.place_name_attribute);
         RatingBar placeRankingRatingBar = (RatingBar) v.findViewById(R.id.place_ranking_attribute);
-        Button mapButton = (Button) v.findViewById(R.id.map_button);
+        FloatingActionButton mapButton = (FloatingActionButton) v.findViewById(R.id.map_button);
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) v.findViewById(R.id.collapsing_toolbar);
 
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +57,7 @@ public class DetailPlaceFragment extends Fragment {
                 .into(placeImageView);
         placeNameTextView.setText(mPlace.getName());
         placeRankingRatingBar.setRating(mPlace.getRanking());
-
+        collapsingToolbar.setTitle(mPlace.getName());
         return v;
     }
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "835024855906",
+    "project_id": "project--7051360840825139439"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835024855906:android:d018c13fa7b8e0d2",
+        "android_client_info": {
+          "package_name": "com.example.joseje.googlemap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835024855906-6jv138krkbuikrnooh5dgd0b6365f86q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.joseje.googlemap",
+            "certificate_hash": "69349F099E47C06E5EB16A97538C224DDD6162C7"
+          }
+        },
+        {
+          "client_id": "835024855906-11h2kl5h22252c961bjom218pekijfov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt2BJVpoX1SD4XYK-Gg32xh-wpGTaYazo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
