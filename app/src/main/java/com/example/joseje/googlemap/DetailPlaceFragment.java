@@ -35,7 +35,7 @@ public class DetailPlaceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragmentb_detail_place, container, false);
+        View v = inflater.inflate(R.layout.fragment_detail_place, container, false);
 
         ImageView placeImageView = (ImageView) v.findViewById(R.id.place_image_view);
         TextView placeNameTextView = (TextView) v.findViewById(R.id.place_name_attribute);
